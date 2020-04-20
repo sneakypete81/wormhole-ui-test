@@ -1,0 +1,203 @@
+[[package]]
+category = "main"
+description = ""
+develop = true
+name = "clickshot"
+optional = false
+python-versions = "^3.6"
+version = "0.4.0"
+
+[package.dependencies]
+mss = "^4.0"
+numpy = "^1.17"
+opencv-python = "^4.1"
+pynput = "^1.4"
+
+[package.source]
+reference = ""
+type = "directory"
+url = "../clickshot"
+
+[[package]]
+category = "main"
+description = "An ultra fast cross-platform multiple screenshots module in pure python using ctypes."
+name = "mss"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "4.0.3"
+
+[[package]]
+category = "main"
+description = "NumPy is the fundamental package for array computing with Python."
+name = "numpy"
+optional = false
+python-versions = ">=3.5"
+version = "1.18.2"
+
+[[package]]
+category = "main"
+description = "Wrapper package for OpenCV python bindings."
+name = "opencv-python"
+optional = false
+python-versions = "*"
+version = "4.2.0.34"
+
+[package.dependencies]
+numpy = ">=1.11.1"
+
+[[package]]
+category = "main"
+description = "Monitor and control user input devices"
+name = "pynput"
+optional = false
+python-versions = "*"
+version = "1.6.8"
+
+[package.dependencies]
+pyobjc-framework-Quartz = ">=3.0"
+python-xlib = ">=0.17"
+six = "*"
+
+[[package]]
+category = "main"
+description = "Python<->ObjC Interoperability Module"
+marker = "sys_platform == \"darwin\""
+name = "pyobjc-core"
+optional = false
+python-versions = ">=3.6"
+version = "6.2"
+
+[[package]]
+category = "main"
+description = "Wrappers for the Cocoa frameworks on macOS"
+marker = "sys_platform == \"darwin\""
+name = "pyobjc-framework-cocoa"
+optional = false
+python-versions = ">=3.6"
+version = "6.2"
+
+[package.dependencies]
+pyobjc-core = ">=6.2"
+
+[[package]]
+category = "main"
+description = "Wrappers for the Quartz frameworks on macOS"
+marker = "sys_platform == \"darwin\""
+name = "pyobjc-framework-quartz"
+optional = false
+python-versions = ">=3.6"
+version = "6.2"
+
+[package.dependencies]
+pyobjc-core = ">=6.2"
+pyobjc-framework-Cocoa = ">=6.2"
+
+[[package]]
+category = "main"
+description = "Python X Library"
+marker = "sys_platform in \"linux\""
+name = "python-xlib"
+optional = false
+python-versions = "*"
+version = "0.27"
+
+[package.dependencies]
+six = ">=1.10.0"
+
+[[package]]
+category = "main"
+description = "Python 2 and 3 compatibility utilities"
+name = "six"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+version = "1.14.0"
+
+[metadata]
+content-hash = "90413b14bb5197db89e91457af3b6eba0b69b3e89384b0c623a19183e5fff85b"
+python-versions = "^3.7"
+
+[metadata.files]
+clickshot = []
+mss = [
+    {file = "mss-4.0.3-py2.py3-none-any.whl", hash = "sha256:c294480a0e7f84bd0c16d5a22edc8a670adbac1bd889e9463dee6c6ea4226f96"},
+    {file = "mss-4.0.3.tar.gz", hash = "sha256:1c40be00bbe2c9d079cc51338afab21d3adf3ddfb88b91b13bc73bdc74a8d411"},
+]
+numpy = [
+    {file = "numpy-1.18.2-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:a1baa1dc8ecd88fb2d2a651671a84b9938461e8a8eed13e2f0a812a94084d1fa"},
+    {file = "numpy-1.18.2-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:a244f7af80dacf21054386539699ce29bcc64796ed9850c99a34b41305630286"},
+    {file = "numpy-1.18.2-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:6fcc5a3990e269f86d388f165a089259893851437b904f422d301cdce4ff25c8"},
+    {file = "numpy-1.18.2-cp35-cp35m-win32.whl", hash = "sha256:b5ad0adb51b2dee7d0ee75a69e9871e2ddfb061c73ea8bc439376298141f77f5"},
+    {file = "numpy-1.18.2-cp35-cp35m-win_amd64.whl", hash = "sha256:87902e5c03355335fc5992a74ba0247a70d937f326d852fc613b7f53516c0963"},
+    {file = "numpy-1.18.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:9ab21d1cb156a620d3999dd92f7d1c86824c622873841d6b080ca5495fa10fef"},
+    {file = "numpy-1.18.2-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:cdb3a70285e8220875e4d2bc394e49b4988bdb1298ffa4e0bd81b2f613be397c"},
+    {file = "numpy-1.18.2-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:6d205249a0293e62bbb3898c4c2e1ff8a22f98375a34775a259a0523111a8f6c"},
+    {file = "numpy-1.18.2-cp36-cp36m-win32.whl", hash = "sha256:a35af656a7ba1d3decdd4fae5322b87277de8ac98b7d9da657d9e212ece76a61"},
+    {file = "numpy-1.18.2-cp36-cp36m-win_amd64.whl", hash = "sha256:1598a6de323508cfeed6b7cd6c4efb43324f4692e20d1f76e1feec7f59013448"},
+    {file = "numpy-1.18.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:deb529c40c3f1e38d53d5ae6cd077c21f1d49e13afc7936f7f868455e16b64a0"},
+    {file = "numpy-1.18.2-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:cd77d58fb2acf57c1d1ee2835567cd70e6f1835e32090538f17f8a3a99e5e34b"},
+    {file = "numpy-1.18.2-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:b1fe1a6f3a6f355f6c29789b5927f8bd4f134a4bd9a781099a7c4f66af8850f5"},
+    {file = "numpy-1.18.2-cp37-cp37m-win32.whl", hash = "sha256:2e40be731ad618cb4974d5ba60d373cdf4f1b8dcbf1dcf4d9dff5e212baf69c5"},
+    {file = "numpy-1.18.2-cp37-cp37m-win_amd64.whl", hash = "sha256:4ba59db1fcc27ea31368af524dcf874d9277f21fd2e1f7f1e2e0c75ee61419ed"},
+    {file = "numpy-1.18.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:59ca9c6592da581a03d42cc4e270732552243dc45e87248aa8d636d53812f6a5"},
+    {file = "numpy-1.18.2-cp38-cp38-manylinux1_i686.whl", hash = "sha256:1b0ece94018ae21163d1f651b527156e1f03943b986188dd81bc7e066eae9d1c"},
+    {file = "numpy-1.18.2-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:82847f2765835c8e5308f136bc34018d09b49037ec23ecc42b246424c767056b"},
+    {file = "numpy-1.18.2-cp38-cp38-win32.whl", hash = "sha256:5e0feb76849ca3e83dd396254e47c7dba65b3fa9ed3df67c2556293ae3e16de3"},
+    {file = "numpy-1.18.2-cp38-cp38-win_amd64.whl", hash = "sha256:ba3c7a2814ec8a176bb71f91478293d633c08582119e713a0c5351c0f77698da"},
+    {file = "numpy-1.18.2.zip", hash = "sha256:e7894793e6e8540dbeac77c87b489e331947813511108ae097f1715c018b8f3d"},
+]
+opencv-python = [
+    {file = "opencv_python-4.2.0.34-cp35-cp35m-macosx_10_9_x86_64.whl", hash = "sha256:e3c57d6579e5bf85f564d6d48d8ee89868b92879a9232b9975d072c346625e92"},
+    {file = "opencv_python-4.2.0.34-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:aa3ca1f54054e1c6439fdf1edafa2a2b940a9eaac04a7b422a1cba9b2d7b9690"},
+    {file = "opencv_python-4.2.0.34-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:31d634dea1b47c231b88d384f90605c598214d0c596443c9bb808e11761829f5"},
+    {file = "opencv_python-4.2.0.34-cp35-cp35m-win32.whl", hash = "sha256:78cc89ebc808886eb190626ee71ab65e47f374121975f86e4d5f7c0e3ce6bed9"},
+    {file = "opencv_python-4.2.0.34-cp35-cp35m-win_amd64.whl", hash = "sha256:7c7ba11720d01cb572b4b6945d115cb103462c0a28996b44d4e540d06e6a90fd"},
+    {file = "opencv_python-4.2.0.34-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:6fa8fac14dd5af4819d475f74af12d65fbbfa391d3110c3a972934a5e6507c24"},
+    {file = "opencv_python-4.2.0.34-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:a37ee82f1b8ed4b4645619c504311e71ce845b78f40055e78d71add5fab7da82"},
+    {file = "opencv_python-4.2.0.34-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:dcb8da8c5ebaa6360c8555547a4c7beb6cd983dd95ba895bb78b86cc8cf3de2b"},
+    {file = "opencv_python-4.2.0.34-cp36-cp36m-win32.whl", hash = "sha256:ef89cbf332b9a735d8a82e9ff79cc743eeeb775ad1cd7100bc2aa2429b496f07"},
+    {file = "opencv_python-4.2.0.34-cp36-cp36m-win_amd64.whl", hash = "sha256:f45c1c3cdda1857bedd4dfe0bbd49c9419af0cc57f33490341edeae97d18f037"},
+    {file = "opencv_python-4.2.0.34-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:c0087b428cef9a32d977390656d91b02245e0e91f909870492df7e39202645dd"},
+    {file = "opencv_python-4.2.0.34-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:fb3c855347310788e4286b867997be354c55535597966ed5dac876d9166013a4"},
+    {file = "opencv_python-4.2.0.34-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:d87e506ab205799727f0efa34b3888949bf029a3ada5eb000ff632606370ca6e"},
+    {file = "opencv_python-4.2.0.34-cp37-cp37m-win32.whl", hash = "sha256:b9de3dd956574662712da8e285f0f54327959a4e95b96a2847d3c3f5ee7b96e2"},
+    {file = "opencv_python-4.2.0.34-cp37-cp37m-win_amd64.whl", hash = "sha256:d8a55585631f9c9eca4b1a996e9732ae023169cf2f46f69e4518d67d96198226"},
+    {file = "opencv_python-4.2.0.34-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:5fdfc0bed37315f27d30ae5ae9bad47ec0a0a28c323739d39c8177b7e0929238"},
+    {file = "opencv_python-4.2.0.34-cp38-cp38-manylinux1_i686.whl", hash = "sha256:068928b9907b3d3acd53b129062557d6b0b8b324bfade77f028dbe4dfe482bf2"},
+    {file = "opencv_python-4.2.0.34-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:0e7c91718351449877c2d4141abd64eee1f9c8701bcfaf4e8627bd023e303368"},
+    {file = "opencv_python-4.2.0.34-cp38-cp38-win32.whl", hash = "sha256:1ab92d807427641ec45d28d5907426aa06b4ffd19c5b794729c74d91cd95090e"},
+    {file = "opencv_python-4.2.0.34-cp38-cp38-win_amd64.whl", hash = "sha256:e2206bb8c17c0f212f1f356d82d72dd090ff4651994034416da9bf0c29732825"},
+]
+pynput = [
+    {file = "pynput-1.6.8-py2.py3-none-any.whl", hash = "sha256:42d6d58abe401a4c98ea04e443e61f74b6b0f97672f42042f566c68700ad0c65"},
+    {file = "pynput-1.6.8-py3.7.egg", hash = "sha256:dffcf42299aa25248d1a508b14f988b3a55aad8afbf42dfa3a8f259cd96bb15b"},
+    {file = "pynput-1.6.8.tar.gz", hash = "sha256:68c1863d6a1520b44b6a915e866cbfa1b8d127aef9289f25183c93e28ee5049a"},
+]
+pyobjc-core = [
+    {file = "pyobjc-core-6.2.tar.gz", hash = "sha256:843b175e6bd6309c4457090ca52ca8e20cb1e6be19df1bc74d1ed1889f52149c"},
+    {file = "pyobjc_core-6.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:cb130c953c79cb2df4eb3976b7fe28c336b0de0dc550b0574eca8856c76cd147"},
+    {file = "pyobjc_core-6.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:ccfad6cba29652b005bc41e819ad70d203cc3e57a16e75e27bc4e6979034c7c0"},
+    {file = "pyobjc_core-6.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:6af32dc491c575346400c29649fffe6e0a1911553b9218529deafc56fa357bdd"},
+    {file = "pyobjc_core-6.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:8dd816c03fcbcbd8da8beb30dffe3aaaf8077d852cca4d636e3d7dd0ab48d39d"},
+]
+pyobjc-framework-cocoa = [
+    {file = "pyobjc-framework-Cocoa-6.2.tar.gz", hash = "sha256:e15bbf82bfe3a14dfd29c7465cc5d8edab16d546410239b7e1a4db62ded4a5b2"},
+    {file = "pyobjc_framework_Cocoa-6.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:04b994a26bc30c912f2f5165d57a987f35889a36dd9c104674bc449c53649629"},
+    {file = "pyobjc_framework_Cocoa-6.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:09612dd81fafb6e1a8eb597b5e523c9de103a50af79e95afbf13b8a5937e3cfa"},
+    {file = "pyobjc_framework_Cocoa-6.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:cbe4f1917aa5def4a77fd4199a9697f3b4224acf59acf4e01fe9a7c73d49b08c"},
+    {file = "pyobjc_framework_Cocoa-6.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:ef3c21a8b37519e3a3880fc0c5539fe27afd3e0235c8ebc9c87b3d0354cbb4ea"},
+]
+pyobjc-framework-quartz = [
+    {file = "pyobjc-framework-Quartz-6.2.tar.gz", hash = "sha256:5133eef934143ed68014d73f7b3b8113441b3631d7a2c17f66839ea4b426c518"},
+    {file = "pyobjc_framework_Quartz-6.2-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:5250961ce781d6f9ee65486cd206cf6a7814b27e9e3eef1a73032cfb69ec4e5f"},
+    {file = "pyobjc_framework_Quartz-6.2-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:2b64baf09bde8864f5d858b51a28b724ea908638f30b50d5b3f1f82f0dc4835e"},
+    {file = "pyobjc_framework_Quartz-6.2-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:08ebaa3a9f4cf5a4de89e0df50d5bd535706900471f14ac42a3f4af1a7398ebb"},
+    {file = "pyobjc_framework_Quartz-6.2-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:906fb0d35e63057157816409b4eb0503ef1fa8e1a0a7176b637905076434379c"},
+]
+python-xlib = [
+    {file = "python-xlib-0.27.tar.bz2", hash = "sha256:a90667c70905c6ef0754c8a09fa61acbc1e1b7ddb946d527831800d7cbfe9348"},
+    {file = "python_xlib-0.27-py2.py3-none-any.whl", hash = "sha256:b251d6679796af4ddabc02b170a5c38eda41f92a83d08fdcfeef5841c6467ac7"},
+]
+six = [
+    {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
+    {file = "six-1.14.0.tar.gz", hash = "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"},
+]
