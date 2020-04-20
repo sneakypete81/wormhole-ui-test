@@ -1,0 +1,6 @@
+.vscode/
+regions/screenshots/
+
+*.pyc
+.DS_Store
+.python-version
