@@ -7,6 +7,7 @@ from regions.main_window import main_window
 keyboard = Keyboard()
 
 connect_dialog.wait_until_visible()
+connect_dialog.set_code_button.wait_until_visible()
 keyboard.type("981891-wormholeui-test\n")
 main_window.blank.wait_until_visible()
 
